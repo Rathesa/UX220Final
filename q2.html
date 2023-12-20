@@ -34,7 +34,7 @@
                 this.button = document.querySelector("#question");
                 this.button.addEventListener("click", () => {
                     const answer = document.querySelector("#answer");
-                    const aAnswers = ["yes", "definitely", "no"]; // array of answers 
+                    const aAnswers = ["yes", "definitely", "no"]; // answers 
                     const nAnswer = Math.floor(Math.random() * aAnswers.length);  // n is number 
                     answer.innerHTML = aAnswers[nAnswer];
                 })
