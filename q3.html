@@ -13,18 +13,18 @@
     <p>Rich was here</p>
 
     <footer>
-        <p>&copy; <x-year></x-year> Rich Hildred.</p>
+        <p>&copy; Rich Hildred <x-year></x-year> </p>
     </footer>
 
     <script>
        
-        class CurrentYear extends HTMLElement {
+        class Year extends HTMLElement {
             connectedCallback() {
                 this.textContent = new Date().getFullYear();
             }
         }
 
-        customElements.define("x-year", CurrentYear);
+        customElements.define("x-year", Year);
     </script>
 
 </body>
