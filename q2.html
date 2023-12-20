@@ -14,6 +14,7 @@
 
         ::placeholder {
             color: #8d8d8d;
+           
         }
     </style>
 </head>
@@ -33,8 +34,8 @@
                 this.button = document.querySelector("#question");
                 this.button.addEventListener("click", () => {
                     const answer = document.querySelector("#answer");
-                    const aAnswers = ["yes", "definitely", "no"];
-                    const nAnswer = Math.floor(Math.random() * aAnswers.length);
+                    const aAnswers = ["yes", "definitely", "no"]; // array of answers 
+                    const nAnswer = Math.floor(Math.random() * aAnswers.length);  // n is number 
                     answer.innerHTML = aAnswers[nAnswer];
                 })
             }
